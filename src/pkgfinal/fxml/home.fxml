@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgfinal.fxml.HomeController">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="592.0" layoutX="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/ok.jpg" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="12.0" prefHeight="33.0" prefWidth="176.0" text="WELCOME !" textFill="#1d1b1b">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="52.0" prefHeight="229.0" prefWidth="335.0" spacing="10.0">
+         <children>
+            <Button fx:id="searchcustomer" mnemonicParsing="false" onAction="#onSearch" prefHeight="30.0" prefWidth="159.0" text="Search Customer">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="addcustomerdetails" mnemonicParsing="false" onAction="#onCustomer" prefHeight="37.0" prefWidth="187.0" text="Add Customer Details ">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="stockdetails" mnemonicParsing="false" onAction="#onStock" prefHeight="36.0" prefWidth="181.0" text="Stock Details">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="savepurchasedetails" mnemonicParsing="false" onAction="#onPurchase" prefHeight="32.0" prefWidth="172.0" text="Save Purchase Details">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="records" mnemonicParsing="false" onAction="#onRecords" prefHeight="34.0" prefWidth="159.0" text="Records">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="logout" layoutX="227.0" layoutY="295.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="32.0" prefWidth="96.0" text="Logout">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="187.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/b.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

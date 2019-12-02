@@ -1,0 +1,2 @@
+pkgfinal.fxml.savepurchasedetailsController
+pkgfinal.fxml.savepurchasedetailsController$savepurchasedetails
